@@ -14,6 +14,7 @@ public class Game extends JPanel{
     private int score = 0;
 
     public Game(){
+        JOptionPane.showMessageDialog(this, "¿Preparado?");
         addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -39,6 +40,7 @@ public class Game extends JPanel{
         frame.getContentPane().setBackground(Color.BLACK);
         frame.add(game);
         frame.setSize(500,500);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
